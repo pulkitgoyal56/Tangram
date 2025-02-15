@@ -26,7 +26,7 @@ class Self:
     def inplace(attr: str):
         def decorator(func: Callable):
             @wraps(func)
-            def wrapper(self, *args, inplace:=True, return_self=False, **kwargs):
+            def wrapper(self, *args, inplace: bool = True, return_self: bool = False, **kwargs):
                 r = func(self, *args, **kwargs)
                 if inplace:
                     setattr(self, attr, r)
