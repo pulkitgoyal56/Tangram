@@ -1,0 +1,19 @@
+[project]
+name = "tangram"
+version = "0.1.0"
+description = "A Tangram Gymnasium Environment for Reinforcement Learning Experiments."
+readme = "README.md"
+authors = [{ name = "Pulkit Goyal", email = "pulkitmds@gmail.com" }]
+requires-python = ">=3.10"
+dependencies = ["gymnasium", "matplotlib", "opencv-python"]
+license = { file = "LICENSE" }
+
+[project.urls]
+Homepage = "https://pulkitgoyal56.github.com/tangram/"
+# Documentation = "https://pulkitgoyal56.github.com/tangram/docs/"
+Repository = "https://github.com/pulkitgoyal56/tangram.git"
+Issues = "https://github.com/pulkitgoyal56/selfutils/issues"
+
+[dependency-groups]
+dev = ["ipykernel", "ipython", "ipdb", "ruff", "py-spy", "pytest"]
+# Changelog = "https://github.com/pulkitgoyal56/selfutils/blob/main/CHANGELOG.md"
